@@ -1,0 +1,535 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formasi Bintang 1-20</title>
+    <style>
+        body {
+            font-family: monospace;
+        }
+
+        .formasi {
+            margin-bottom: 30px;
+        }
+
+        pre {
+            font-family: monospace;
+            font-size: 20px;
+            line-height: 1.2;
+        }
+    </style>
+</head>
+<body>
+
+<h1>FORMASI BINTANG</h1>
+
+<script>
+
+/* =====================================================
+   1
+===================================================== */
+
+document.write("<div class='formasi'>");
+document.write("<h2>1.</h2>");
+
+document.write("<pre>");
+document.write("***********\n");
+document.write("***** *****\n");
+document.write("**** ****\n");
+document.write("*** ***\n");
+document.write("** **\n");
+document.write("* *\n");
+document.write("</pre>");
+document.write("</div>");
+
+
+
+/* =====================================================
+   2
+===================================================== */
+
+document.write("<div class='formasi'>");
+document.write("<h2>2.</h2>");
+
+for (let i = 1; i <= 6; i++) {
+
+    let bintang = "";
+
+    for (let j = 1; j <= (2 * i - 1); j++) {
+        bintang += "*";
+    }
+
+    document.write("<pre>" + bintang + "</pre>");
+}
+
+document.write("</div>");
+
+
+
+/* =====================================================
+   3
+===================================================== */
+
+document.write("<div class='formasi'>");
+document.write("<h2>3.</h2>");
+
+document.write("<pre>");
+
+for (let i = 1; i <= 3; i++) {
+
+    for (let j = 1; j <= i; j++) {
+        document.write("*");
+    }
+
+    document.write("\n");
+}
+
+for (let i = 1; i <= 3; i++) {
+
+    for (let j = 1; j <= i; j++) {
+        document.write("*");
+    }
+
+    document.write("\n");
+}
+
+document.write("</pre>");
+document.write("</div>");
+
+
+
+/* =====================================================
+   4
+===================================================== */
+
+document.write("<div class='formasi'>");
+document.write("<h2>4.</h2>");
+
+document.write("<pre>");
+
+for (let i = 1; i <= 5; i++) {
+
+    let kiri = "";
+    let kanan = "";
+
+    for (let j = 1; j <= i; j++) {
+        kiri += "*";
+        kanan += "*";
+    }
+
+    document.write(kiri + " " + kanan + "\n");
+}
+
+document.write("</pre>");
+document.write("</div>");
+
+
+
+/* =====================================================
+   5
+===================================================== */
+
+document.write("<div class='formasi'>");
+document.write("<h2>5.</h2>");
+
+document.write("<pre>");
+
+for (let i = 6; i >= 1; i--) {
+
+    for (let j = 1; j <= (2 * i - 1); j++) {
+        document.write("*");
+    }
+
+    document.write("\n");
+}
+
+document.write("</pre>");
+document.write("</div>");
+
+
+
+/* =====================================================
+   6
+===================================================== */
+
+document.write("<div class='formasi'>");
+document.write("<h2>6.</h2>");
+
+document.write("<pre>");
+
+for (let ulang = 1; ulang <= 2; ulang++) {
+
+    for (let i = 1; i <= 3; i++) {
+
+        for (let j = 1; j <= i; j++) {
+            document.write("*");
+        }
+
+        document.write("\n");
+    }
+}
+
+document.write("</pre>");
+document.write("</div>");
+
+
+
+/* =====================================================
+   7
+===================================================== */
+
+document.write("<div class='formasi'>");
+document.write("<h2>7.</h2>");
+
+document.write("<pre>");
+
+for (let i = 5; i >= 1; i--) {
+
+    for (let j = 1; j <= i; j++) {
+        document.write("*");
+    }
+
+    document.write("\n");
+}
+
+for (let i = 2; i <= 5; i++) {
+
+    for (let j = 1; j <= i; j++) {
+        document.write("*");
+    }
+
+    document.write("\n");
+}
+
+document.write("</pre>");
+document.write("</div>");
+
+
+
+/* =====================================================
+   8
+===================================================== */
+
+document.write("<div class='formasi'>");
+document.write("<h2>8.</h2>");
+
+document.write("<pre>");
+
+for (let i = 1; i <= 5; i++) {
+    document.write("0**********\n");
+}
+
+document.write("00000000000\n");
+
+document.write("</pre>");
+document.write("</div>");
+
+
+
+/* =====================================================
+   9
+===================================================== */
+
+document.write("<div class='formasi'>");
+document.write("<h2>9.</h2>");
+
+document.write("<pre>");
+
+for (let i = 1; i <= 5; i++) {
+    document.write("**********0\n");
+}
+
+document.write("00000000000\n");
+
+document.write("</pre>");
+document.write("</div>");
+
+
+
+/* =====================================================
+   10
+===================================================== */
+
+document.write("<div class='formasi'>");
+document.write("<h2>10.</h2>");
+
+document.write("<pre>");
+
+for (let i = 6; i >= 1; i--) {
+
+    for (let j = 1; j <= i; j++) {
+        document.write("*");
+    }
+
+    document.write("\n");
+}
+
+for (let i = 2; i <= 5; i++) {
+
+    for (let j = 1; j <= i; j++) {
+        document.write("*");
+    }
+
+    document.write("\n");
+}
+
+document.write("</pre>");
+document.write("</div>");
+
+
+
+/* =====================================================
+   11
+===================================================== */
+
+document.write("<div class='formasi'>");
+document.write("<h2>11.</h2>");
+
+document.write("<pre>");
+
+document.write("00000000000\n");
+
+for (let i = 1; i <= 5; i++) {
+    document.write("0**********\n");
+}
+
+document.write("</pre>");
+document.write("</div>");
+
+
+
+/* =====================================================
+   12
+===================================================== */
+
+document.write("<div class='formasi'>");
+document.write("<h2>12.</h2>");
+
+document.write("<pre>");
+
+document.write("00000000000\n");
+
+for (let i = 1; i <= 5; i++) {
+    document.write("**********0\n");
+}
+
+document.write("</pre>");
+document.write("</div>");
+
+
+
+/* =====================================================
+   13
+===================================================== */
+
+document.write("<div class='formasi'>");
+document.write("<h2>13.</h2>");
+
+document.write("<pre>");
+
+for (let i = 1; i <= 6; i++) {
+
+    for (let j = 1; j < i; j++) {
+        document.write("0");
+    }
+
+    for (let j = i; j <= 7; j++) {
+        document.write("*");
+    }
+
+    document.write("\n");
+}
+
+document.write("</pre>");
+document.write("</div>");
+
+
+
+/* =====================================================
+   14
+===================================================== */
+
+document.write("<div class='formasi'>");
+document.write("<h2>14.</h2>");
+
+document.write("<pre>");
+
+for (let i = 1; i <= 6; i++) {
+
+    for (let j = 1; j <= i; j++) {
+        document.write("*");
+    }
+
+    for (let j = i + 1; j <= 7; j++) {
+        document.write("0");
+    }
+
+    document.write("\n");
+}
+
+document.write("</pre>");
+document.write("</div>");
+
+
+
+/* =====================================================
+   15
+===================================================== */
+
+document.write("<div class='formasi'>");
+document.write("<h2>15.</h2>");
+
+document.write("<pre>");
+
+for (let i = 1; i <= 6; i++) {
+
+    for (let j = 1; j <= (7 - i); j++) {
+        document.write("0");
+    }
+
+    for (let j = 1; j <= i; j++) {
+        document.write("*");
+    }
+
+    document.write("\n");
+}
+
+document.write("</pre>");
+document.write("</div>");
+
+
+
+/* =====================================================
+   16
+===================================================== */
+
+document.write("<div class='formasi'>");
+document.write("<h2>16.</h2>");
+
+document.write("<pre>");
+
+for (let i = 1; i <= 6; i++) {
+
+    for (let j = 1; j <= (7 - i); j++) {
+        document.write("0");
+    }
+
+    for (let j = 1; j <= i; j++) {
+        document.write("*");
+    }
+
+    document.write("\n");
+}
+
+document.write("</pre>");
+document.write("</div>");
+
+
+
+/* =====================================================
+   17
+===================================================== */
+
+document.write("<div class='formasi'>");
+document.write("<h2>17.</h2>");
+
+document.write("<pre>");
+
+for (let i = 1; i <= 6; i++) {
+
+    for (let j = 1; j <= (7 - i); j++) {
+
+        if (j === 7 - i) {
+            document.write("*");
+        } else {
+            document.write("0");
+        }
+    }
+
+    for (let j = 1; j <= i - 1; j++) {
+        document.write("0");
+    }
+
+    document.write("\n");
+}
+
+document.write("</pre>");
+document.write("</div>");
+
+
+
+/* =====================================================
+   18
+===================================================== */
+
+document.write("<div class='formasi'>");
+document.write("<h2>18.</h2>");
+
+document.write("<pre>");
+
+for (let i = 1; i <= 6; i++) {
+
+    for (let j = 1; j < i; j++) {
+        document.write("0");
+    }
+
+    document.write("*");
+
+    for (let j = i; j <= 6; j++) {
+        document.write("0");
+    }
+
+    document.write("\n");
+}
+
+document.write("</pre>");
+document.write("</div>");
+
+
+
+/* =====================================================
+   19
+===================================================== */
+
+document.write("<div class='formasi'>");
+document.write("<h2>19.</h2>");
+
+document.write("<pre>");
+
+document.write("0000000\n");
+
+for (let i = 1; i <= 4; i++) {
+    document.write("0*****0\n");
+}
+
+document.write("0000000\n");
+
+document.write("</pre>");
+document.write("</div>");
+
+
+
+/* =====================================================
+   20
+===================================================== */
+
+document.write("<div class='formasi'>");
+document.write("<h2>20.</h2>");
+
+document.write("<pre>");
+
+document.write("0000000\n");
+document.write("*******\n");
+document.write("=======\n");
+document.write("0000000\n");
+document.write("*******\n");
+document.write("=======\n");
+
+document.write("</pre>");
+document.write("</div>");
+
+</script>
+
+</body>
+</html>
+```

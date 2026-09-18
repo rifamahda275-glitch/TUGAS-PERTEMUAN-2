@@ -1,0 +1,1629 @@
+```html
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soal Pemrograman 1 - 50</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f2f2f2;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .soal {
+            background: white;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 900px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        input, button {
+            padding: 8px;
+            margin: 5px;
+        }
+
+        button {
+            cursor: pointer;
+        }
+
+        .hasil {
+            background: #eee;
+            padding: 12px;
+            margin-top: 10px;
+            border-radius: 5px;
+            white-space: pre-wrap;
+        }
+
+        /* Animasi */
+        .layar {
+            position: relative;
+            width: 100%;
+            height: 250px;
+            border: 2px solid black;
+            background: white;
+            overflow: hidden;
+        }
+
+        .angka {
+            position: absolute;
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        .animasi-horizontal {
+            animation: kananKiri 4s linear infinite alternate;
+        }
+
+        .animasi-horizontal2 {
+            animation: kiriKanan 4s linear infinite alternate;
+        }
+
+        .animasi-vertikal {
+            animation: bawahAtas 4s linear infinite alternate;
+        }
+
+        .animasi-vertikal2 {
+            animation: atasBawah 4s linear infinite alternate;
+        }
+
+        @keyframes kananKiri {
+            from {
+                left: 0;
+            }
+            to {
+                left: calc(100% - 20px);
+            }
+        }
+
+        @keyframes kiriKanan {
+            from {
+                left: calc(100% - 20px);
+            }
+            to {
+                left: 0;
+            }
+        }
+
+        @keyframes bawahAtas {
+            from {
+                top: 0;
+            }
+            to {
+                top: calc(100% - 30px);
+            }
+        }
+
+        @keyframes atasBawah {
+            from {
+                top: calc(100% - 30px);
+            }
+            to {
+                top: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>SOAL PEMROGRAMAN 1 - 50</h1>
+
+<!-- ===================================================== -->
+<!-- SOAL 1 -->
+<!-- ===================================================== -->
+
+<div class="soal">
+    <h2>1. Membalik Kalimat</h2>
+
+    <input type="text" id="kalimat1" placeholder="Masukkan kalimat">
+    <button onclick="soal1()">Jalankan</button>
+
+    <div class="hasil" id="hasil1"></div>
+</div>
+
+
+<!-- ===================================================== -->
+<!-- SOAL 2 -->
+<!-- ===================================================== -->
+
+<div class="soal">
+    <h2>2. Menghitung Jumlah Huruf</h2>
+
+    <input type="text" id="kalimat2" placeholder="Masukkan kalimat">
+    <input type="text" id="huruf2" maxlength="1" placeholder="Huruf">
+
+    <button onclick="soal2()">Jalankan</button>
+
+    <div class="hasil" id="hasil2"></div>
+</div>
+
+
+<!-- ===================================================== -->
+<!-- SOAL 3 -->
+<!-- ===================================================== -->
+
+<div class="soal">
+    <h2>3. Menghitung Jumlah Karakter</h2>
+
+    <input type="text" id="kalimat3" placeholder="Masukkan kalimat">
+    <button onclick="soal3()">Jalankan</button>
+
+    <div class="hasil" id="hasil3"></div>
+</div>
+
+
+<!-- ===================================================== -->
+<!-- SOAL 4 -->
+<!-- ===================================================== -->
+
+<div class="soal">
+    <h2>4. Tampilan: 122333444455555666666</h2>
+    <button onclick="soal4()">Jalankan</button>
+    <div class="hasil" id="hasil4"></div>
+</div>
+
+
+<!-- ===================================================== -->
+<!-- SOAL 5 -->
+<!-- ===================================================== -->
+
+<div class="soal">
+    <h2>5. Tampilan: 666666555554444333221</h2>
+    <button onclick="soal5()">Jalankan</button>
+    <div class="hasil" id="hasil5"></div>
+</div>
+
+
+<!-- ===================================================== -->
+<!-- SOAL 6 -->
+<!-- ===================================================== -->
+
+<div class="soal">
+    <h2>6. Tampilan: 112123123412345123456</h2>
+    <button onclick="soal6()">Jalankan</button>
+    <div class="hasil" id="hasil6"></div>
+</div>
+
+
+<!-- ===================================================== -->
+<!-- SOAL 7 -->
+<!-- ===================================================== -->
+
+<div class="soal">
+    <h2>7. Tampilan: 654321543214321321211</h2>
+    <button onclick="soal7()">Jalankan</button>
+    <div class="hasil" id="hasil7"></div>
+</div>
+
+
+<!-- ===================================================== -->
+<!-- SOAL 8 -->
+<!-- ===================================================== -->
+
+<div class="soal">
+    <h2>8. Tampilan: 112333123455555123456</h2>
+    <button onclick="soal8()">Jalankan</button>
+    <div class="hasil" id="hasil8"></div>
+</div>
+
+
+<!-- ===================================================== -->
+<!-- SOAL 9 -->
+<!-- ===================================================== -->
+
+<div class="soal">
+    <h2>9. Tampilan: 122123444412345666666</h2>
+    <button onclick="soal9()">Jalankan</button>
+    <div class="hasil" id="hasil9"></div>
+</div>
+
+
+<!-- ===================================================== -->
+<!-- SOAL 10 -->
+<!-- ===================================================== -->
+
+<div class="soal">
+    <h2>10. Tampilan: 654321555554321333211</h2>
+    <button onclick="soal10()">Jalankan</button>
+    <div class="hasil" id="hasil10"></div>
+</div>
+
+
+<!-- ===================================================== -->
+<!-- SOAL 11 -->
+<!-- ===================================================== -->
+
+<div class="soal">
+    <h2>11. Tampilan: 666666123454444123221</h2>
+    <button onclick="soal11()">Jalankan</button>
+    <div class="hasil" id="hasil11"></div>
+</div>
+
+
+<!-- ===================================================== -->
+<!-- SOAL 12 -->
+<!-- ===================================================== -->
+
+<div class="soal">
+    <h2>12. Pola Angka</h2>
+    <button onclick="soal12()">Jalankan</button>
+    <div class="hasil" id="hasil12"></div>
+</div>
+
+
+<!-- ===================================================== -->
+<!-- SOAL 13 -->
+<!-- ===================================================== -->
+
+<div class="soal">
+    <h2>13. Pola Angka</h2>
+    <button onclick="soal13()">Jalankan</button>
+    <div class="hasil" id="hasil13"></div>
+</div>
+
+
+<!-- ===================================================== -->
+<!-- SOAL 14 -->
+<!-- ===================================================== -->
+
+<div class="soal">
+    <h2>14. Pola Angka</h2>
+    <button onclick="soal14()">Jalankan</button>
+    <div class="hasil" id="hasil14"></div>
+</div>
+
+
+<!-- ===================================================== -->
+<!-- SOAL 15 -->
+<!-- ===================================================== -->
+
+<div class="soal">
+    <h2>15. Pola Angka</h2>
+    <button onclick="soal15()">Jalankan</button>
+    <div class="hasil" id="hasil15"></div>
+</div>
+
+
+<!-- ===================================================== -->
+<!-- SOAL 16 -->
+<!-- ===================================================== -->
+
+<div class="soal">
+    <h2>16. Pola: n+4, n-2</h2>
+
+    <input type="number" id="awal16" value="1">
+    <input type="number" id="jumlah16" value="12">
+
+    <button onclick="soal16()">Jalankan</button>
+
+    <div class="hasil" id="hasil16"></div>
+</div>
+
+
+<!-- ===================================================== -->
+<!-- SOAL 17 -->
+<!-- ===================================================== -->
+
+<div class="soal">
+    <h2>17. Pola: n+10, n-5</h2>
+
+    <input type="number" id="awal17" value="2">
+    <input type="number" id="jumlah17" value="12">
+
+    <button onclick="soal17()">Jalankan</button>
+
+    <div class="hasil" id="hasil17"></div>
+</div>
+
+
+<!-- ===================================================== -->
+<!-- SOAL 18 -->
+<!-- ===================================================== -->
+
+<div class="soal">
+    <h2>18. Pola: n-3, n+5</h2>
+
+    <input type="number" id="awal18" value="5">
+    <input type="number" id="jumlah18" value="12">
+
+    <button onclick="soal18()">Jalankan</button>
+
+    <div class="hasil" id="hasil18"></div>
+</div>
+
+
+<!-- ===================================================== -->
+<!-- SOAL 19 -->
+<!-- ===================================================== -->
+
+<div class="soal">
+    <h2>19. Pola: n×3, n-5</h2>
+
+    <input type="number" id="awal19" value="3">
+    <input type="number" id="jumlah19" value="10">
+
+    <button onclick="soal19()">Jalankan</button>
+
+    <div class="hasil" id="hasil19"></div>
+</div>
+
+
+<!-- ===================================================== -->
+<!-- SOAL 20 -->
+<!-- ===================================================== -->
+
+<div class="soal">
+    <h2>20. Pola: +1, +2, +3, ...</h2>
+
+    <input type="number" id="awal20" value="1">
+    <input type="number" id="jumlah20" value="13">
+
+    <button onclick="soal20()">Jalankan</button>
+
+    <div class="hasil" id="hasil20"></div>
+</div>
+
+
+<!-- ===================================================== -->
+<!-- SOAL 21 -->
+<!-- ===================================================== -->
+
+<div class="soal">
+    <h2>21. Pangkat 2</h2>
+
+    <input type="number" id="jumlah21" value="10">
+
+    <button onclick="soal21()">Jalankan</button>
+
+    <div class="hasil" id="hasil21"></div>
+</div>
+
+
+<!-- ===================================================== -->
+<!-- SOAL 22 -->
+<!-- ===================================================== -->
+
+<div class="soal">
+    <h2>22. Faktorial</h2>
+
+    <input type="number" id="n22" value="3">
+
+    <button onclick="soal22()">Jalankan</button>
+
+    <div class="hasil" id="hasil22"></div>
+</div>
+
+
+<!-- ===================================================== -->
+<!-- SOAL 23 -->
+<!-- ===================================================== -->
+
+<div class="soal">
+    <h2>23. Fibonacci</h2>
+
+    <input type="number" id="maks23" value="100">
+
+    <button onclick="soal23()">Jalankan</button>
+
+    <div class="hasil" id="hasil23"></div>
+</div>
+
+
+<!-- ===================================================== -->
+<!-- SOAL 24-28 -->
+<!-- ===================================================== -->
+
+<div class="soal">
+    <h2>24. Tahun Kabisat Berakhiran 0</h2>
+
+    <input type="number" id="awal24" placeholder="Tahun awal">
+    <input type="number" id="akhir24" placeholder="Tahun akhir">
+
+    <button onclick="tahunKabisat(24,0)">Jalankan</button>
+
+    <div class="hasil" id="hasil24"></div>
+</div>
+
+
+<div class="soal">
+    <h2>25. Tahun Kabisat Berakhiran 2</h2>
+
+    <input type="number" id="awal25" placeholder="Tahun awal">
+    <input type="number" id="akhir25" placeholder="Tahun akhir">
+
+    <button onclick="tahunKabisat(25,2)">Jalankan</button>
+
+    <div class="hasil" id="hasil25"></div>
+</div>
+
+
+<div class="soal">
+    <h2>26. Tahun Kabisat Berakhiran 4</h2>
+
+    <input type="number" id="awal26" placeholder="Tahun awal">
+    <input type="number" id="akhir26" placeholder="Tahun akhir">
+
+    <button onclick="tahunKabisat(26,4)">Jalankan</button>
+
+    <div class="hasil" id="hasil26"></div>
+</div>
+
+
+<div class="soal">
+    <h2>27. Tahun Kabisat Berakhiran 6</h2>
+
+    <input type="number" id="awal27" placeholder="Tahun awal">
+    <input type="number" id="akhir27" placeholder="Tahun akhir">
+
+    <button onclick="tahunKabisat(27,6)">Jalankan</button>
+
+    <div class="hasil" id="hasil27"></div>
+</div>
+
+
+<div class="soal">
+    <h2>28. Tahun Kabisat Berakhiran 8</h2>
+
+    <input type="number" id="awal28" placeholder="Tahun awal">
+    <input type="number" id="akhir28" placeholder="Tahun akhir">
+
+    <button onclick="tahunKabisat(28,8)">Jalankan</button>
+
+    <div class="hasil" id="hasil28"></div>
+</div>
+
+
+<!-- ===================================================== -->
+<!-- SOAL 29-33 -->
+<!-- ===================================================== -->
+
+<div class="soal">
+    <h2>29. Bilangan Habis Dibagi 3</h2>
+
+    <input type="number" id="awal29" placeholder="Awal">
+    <input type="number" id="akhir29" placeholder="Akhir">
+
+    <button onclick="habisDibagi(29,3)">Jalankan</button>
+
+    <div class="hasil" id="hasil29"></div>
+</div>
+
+
+<div class="soal">
+    <h2>30. Bilangan Habis Dibagi 4</h2>
+
+    <input type="number" id="awal30" placeholder="Awal">
+    <input type="number" id="akhir30" placeholder="Akhir">
+
+    <button onclick="habisDibagi(30,4)">Jalankan</button>
+
+    <div class="hasil" id="hasil30"></div>
+</div>
+
+
+<div class="soal">
+    <h2>31. Bilangan Habis Dibagi 5</h2>
+
+    <input type="number" id="awal31" placeholder="Awal">
+    <input type="number" id="akhir31" placeholder="Akhir">
+
+    <button onclick="habisDibagi(31,5)">Jalankan</button>
+
+    <div class="hasil" id="hasil31"></div>
+</div>
+
+
+<div class="soal">
+    <h2>32. Bilangan Habis Dibagi 6</h2>
+
+    <input type="number" id="awal32" placeholder="Awal">
+    <input type="number" id="akhir32" placeholder="Akhir">
+
+    <button onclick="habisDibagi(32,6)">Jalankan</button>
+
+    <div class="hasil" id="hasil32"></div>
+</div>
+
+
+<div class="soal">
+    <h2>33. Bilangan Habis Dibagi 7</h2>
+
+    <input type="number" id="awal33" placeholder="Awal">
+    <input type="number" id="akhir33" placeholder="Akhir">
+
+    <button onclick="habisDibagi(33,7)">Jalankan</button>
+
+    <div class="hasil" id="hasil33"></div>
+</div>
+
+
+<!-- ===================================================== -->
+<!-- SOAL 34-41 ANIMASI -->
+<!-- ===================================================== -->
+
+<div class="soal">
+    <h2>34. Animasi kiri atas → kanan atas → kiri atas</h2>
+
+    <div class="layar">
+        <div class="angka animasi-horizontal" style="top:0;">0</div>
+    </div>
+</div>
+
+
+<div class="soal">
+    <h2>35. Animasi kanan atas → kiri atas → kanan atas</h2>
+
+    <div class="layar">
+        <div class="angka animasi-horizontal2" style="top:0;">0</div>
+    </div>
+</div>
+
+
+<div class="soal">
+    <h2>36. Animasi kiri bawah → kanan bawah → kiri bawah</h2>
+
+    <div class="layar">
+        <div class="angka animasi-horizontal"
+             style="bottom:0;">0</div>
+    </div>
+</div>
+
+
+<div class="soal">
+    <h2>37. Animasi kanan bawah → kiri bawah → kanan bawah</h2>
+
+    <div class="layar">
+        <div class="angka animasi-horizontal2"
+             style="bottom:0;">0</div>
+    </div>
+</div>
+
+
+<div class="soal">
+    <h2>38. Animasi kiri atas → kiri bawah → kiri atas</h2>
+
+    <div class="layar">
+        <div class="angka animasi-vertikal"
+             style="left:0;">0</div>
+    </div>
+</div>
+
+
+<div class="soal">
+    <h2>39. Animasi kiri bawah → kiri atas → kiri bawah</h2>
+
+    <div class="layar">
+        <div class="angka animasi-vertikal2"
+             style="left:0;">0</div>
+    </div>
+</div>
+
+
+<div class="soal">
+    <h2>40. Animasi kanan atas → kanan bawah → kanan atas</h2>
+
+    <div class="layar">
+        <div class="angka animasi-vertikal"
+             style="right:0;">0</div>
+    </div>
+</div>
+
+
+<div class="soal">
+    <h2>41. Animasi kanan bawah → kanan atas → kanan bawah</h2>
+
+    <div class="layar">
+        <div class="angka animasi-vertikal2"
+             style="right:0;">0</div>
+    </div>
+</div>
+
+
+<!-- ===================================================== -->
+<!-- SOAL 42 -->
+<!-- ===================================================== -->
+
+<div class="soal">
+    <h2>42. Mencari Bilangan Terbesar</h2>
+
+    <input type="text"
+           id="angka42"
+           placeholder="Contoh: 10 20 5 30 8">
+
+    <button onclick="soal42()">Jalankan</button>
+
+    <div class="hasil" id="hasil42"></div>
+</div>
+
+
+<!-- ===================================================== -->
+<!-- SOAL 43 -->
+<!-- ===================================================== -->
+
+<div class="soal">
+    <h2>43. Mencari Bilangan Terkecil</h2>
+
+    <input type="text"
+           id="angka43"
+           placeholder="Contoh: 10 20 5 30 8">
+
+    <button onclick="soal43()">Jalankan</button>
+
+    <div class="hasil" id="hasil43"></div>
+</div>
+
+
+<!-- ===================================================== -->
+<!-- SOAL 44 -->
+<!-- ===================================================== -->
+
+<div class="soal">
+    <h2>44. Menghitung Jumlah Bilangan Genap</h2>
+
+    <input type="text"
+           id="angka44"
+           placeholder="Minimal 10 angka">
+
+    <button onclick="soal44()">Jalankan</button>
+
+    <div class="hasil" id="hasil44"></div>
+</div>
+
+
+<!-- ===================================================== -->
+<!-- SOAL 45 -->
+<!-- ===================================================== -->
+
+<div class="soal">
+    <h2>45. Menghitung Jumlah Bilangan Ganjil</h2>
+
+    <input type="text"
+           id="angka45"
+           placeholder="Minimal 10 angka">
+
+    <button onclick="soal45()">Jalankan</button>
+
+    <div class="hasil" id="hasil45"></div>
+</div>
+
+
+<!-- ===================================================== -->
+<!-- SOAL 46 -->
+<!-- ===================================================== -->
+
+<div class="soal">
+    <h2>46. Total Bilangan Bulat Positif</h2>
+
+    <input type="number" id="awal46" placeholder="Awal">
+    <input type="number" id="akhir46" placeholder="Akhir">
+
+    <button onclick="soal46()">Jalankan</button>
+
+    <div class="hasil" id="hasil46"></div>
+</div>
+
+
+<!-- ===================================================== -->
+<!-- SOAL 47 -->
+<!-- ===================================================== -->
+
+<div class="soal">
+    <h2>47. Total Bilangan Genap</h2>
+
+    <input type="number" id="awal47" placeholder="Awal">
+    <input type="number" id="akhir47" placeholder="Akhir">
+
+    <button onclick="soal47()">Jalankan</button>
+
+    <div class="hasil" id="hasil47"></div>
+</div>
+
+
+<!-- ===================================================== -->
+<!-- SOAL 48 -->
+<!-- ===================================================== -->
+
+<div class="soal">
+    <h2>48. Total Bilangan Ganjil</h2>
+
+    <input type="number" id="awal48" placeholder="Awal">
+    <input type="number" id="akhir48" placeholder="Akhir">
+
+    <button onclick="soal48()">Jalankan</button>
+
+    <div class="hasil" id="hasil48"></div>
+</div>
+
+
+<!-- ===================================================== -->
+<!-- SOAL 49 -->
+<!-- ===================================================== -->
+
+<div class="soal">
+    <h2>49. Menampilkan Bilangan Prima</h2>
+
+    <input type="number" id="awal49" placeholder="Awal">
+    <input type="number" id="akhir49" placeholder="Akhir">
+
+    <button onclick="soal49()">Jalankan</button>
+
+    <div class="hasil" id="hasil49"></div>
+</div>
+
+
+<!-- ===================================================== -->
+<!-- SOAL 50 -->
+<!-- ===================================================== -->
+
+<div class="soal">
+    <h2>50. Jumlah Total Bilangan Prima</h2>
+
+    <input type="number" id="awal50" placeholder="Awal">
+    <input type="number" id="akhir50" placeholder="Akhir">
+
+    <button onclick="soal50()">Jalankan</button>
+
+    <div class="hasil" id="hasil50"></div>
+</div>
+
+
+<script>
+
+/* =========================================================
+   FUNGSI BANTU
+========================================================= */
+
+function tampilkan(id, teks) {
+    document.getElementById(id).textContent = teks;
+}
+
+
+/* =========================================================
+   SOAL 1
+========================================================= */
+
+function soal1() {
+
+    let kalimat = document.getElementById("kalimat1").value;
+
+    let hasil = "";
+
+    for (let i = kalimat.length - 1; i >= 0; i--) {
+        hasil += kalimat[i];
+    }
+
+    tampilkan("hasil1", hasil);
+}
+
+
+/* =========================================================
+   SOAL 2
+========================================================= */
+
+function soal2() {
+
+    let kalimat = document.getElementById("kalimat2").value;
+    let huruf = document.getElementById("huruf2").value;
+
+    let jumlah = 0;
+
+    for (let i = 0; i < kalimat.length; i++) {
+
+        if (kalimat[i].toLowerCase() === huruf.toLowerCase()) {
+            jumlah++;
+        }
+    }
+
+    tampilkan(
+        "hasil2",
+        "Huruf '" + huruf + "' muncul sebanyak " + jumlah + " kali."
+    );
+}
+
+
+/* =========================================================
+   SOAL 3
+========================================================= */
+
+function soal3() {
+
+    let kalimat = document.getElementById("kalimat3").value;
+
+    tampilkan(
+        "hasil3",
+        "Jumlah karakter = " + kalimat.length
+    );
+}
+
+
+/* =========================================================
+   SOAL 4
+========================================================= */
+
+function soal4() {
+
+    let hasil = "";
+
+    for (let i = 1; i <= 6; i++) {
+
+        for (let j = 0; j < i; j++) {
+            hasil += i;
+        }
+    }
+
+    tampilkan("hasil4", hasil);
+}
+
+
+/* =========================================================
+   SOAL 5
+========================================================= */
+
+function soal5() {
+
+    let hasil = "";
+
+    for (let i = 6; i >= 1; i--) {
+
+        for (let j = 0; j < i; j++) {
+            hasil += i;
+        }
+    }
+
+    tampilkan("hasil5", hasil);
+}
+
+
+/* =========================================================
+   SOAL 6
+========================================================= */
+
+function soal6() {
+
+    let hasil = "";
+
+    for (let i = 1; i <= 6; i++) {
+
+        for (let j = 1; j <= i; j++) {
+            hasil += j;
+        }
+    }
+
+    tampilkan("hasil6", hasil);
+}
+
+
+/* =========================================================
+   SOAL 7
+========================================================= */
+
+function soal7() {
+
+    let hasil = "";
+
+    for (let i = 6; i >= 1; i--) {
+
+        for (let j = i; j >= 1; j--) {
+            hasil += j;
+        }
+    }
+
+    tampilkan("hasil7", hasil);
+}
+
+
+/* =========================================================
+   SOAL 8
+========================================================= */
+
+function soal8() {
+
+    let hasil = "";
+
+    for (let i = 1; i <= 5; i++) {
+
+        for (let j = 1; j <= i; j++) {
+            hasil += j;
+        }
+
+        if (i === 5) {
+            hasil += "55555";
+        }
+    }
+
+    hasil += "123456";
+
+    tampilkan("hasil8", hasil);
+}
+
+
+/* =========================================================
+   SOAL 9
+========================================================= */
+
+function soal9() {
+
+    let hasil = "";
+
+    hasil += "1";
+    hasil += "22";
+    hasil += "123";
+    hasil += "4444";
+    hasil += "12345";
+    hasil += "666666";
+
+    tampilkan("hasil9", hasil);
+}
+
+
+/* =========================================================
+   SOAL 10
+========================================================= */
+
+function soal10() {
+
+    let hasil = "";
+
+    hasil += "654321";
+    hasil += "55555";
+    hasil += "4321";
+    hasil += "333";
+    hasil += "21";
+
+    tampilkan("hasil10", hasil);
+}
+
+
+/* =========================================================
+   SOAL 11
+========================================================= */
+
+function soal11() {
+
+    let hasil = "";
+
+    hasil += "666666";
+    hasil += "12345";
+    hasil += "4444";
+    hasil += "123";
+    hasil += "22";
+    hasil += "1";
+
+    tampilkan("hasil11", hasil);
+}
+
+
+/* =========================================================
+   SOAL 12
+========================================================= */
+
+function soal12() {
+
+    let hasil = "";
+
+    hasil += "122";
+    hasil += "123";
+    hasil += "12345";
+    hasil += "55555";
+    hasil += "666666";
+    hasil += "1234567";
+    hasil += "12345678";
+    hasil += "999999999";
+
+    tampilkan("hasil12", hasil + "...");
+}
+
+
+/* =========================================================
+   SOAL 13
+========================================================= */
+
+function soal13() {
+
+    let hasil = "";
+
+    hasil += "1";
+    hasil += "12";
+    hasil += "333";
+    hasil += "4444";
+    hasil += "12345";
+    hasil += "123456";
+    hasil += "77777777";
+    hasil += "88888888";
+    hasil += "123456789";
+
+    tampilkan("hasil13", hasil + "...");
+}
+
+
+/* =========================================================
+   SOAL 14
+========================================================= */
+
+function soal14() {
+
+    let hasil = "";
+
+    hasil += "88888888";
+    hasil += "7777777";
+    hasil += "654321";
+    hasil += "54321";
+    hasil += "4444";
+    hasil += "333";
+    hasil += "21";
+
+    tampilkan("hasil14", hasil);
+}
+
+
+/* =========================================================
+   SOAL 15
+========================================================= */
+
+function soal15() {
+
+    let hasil = "";
+
+    hasil += "87654321";
+    hasil += "7654321";
+    hasil += "666666";
+    hasil += "55555";
+    hasil += "4321";
+    hasil += "321";
+    hasil += "22";
+    hasil += "1";
+
+    tampilkan("hasil15", hasil);
+}
+
+
+/* =========================================================
+   SOAL 16
+========================================================= */
+
+function soal16() {
+
+    let n = Number(document.getElementById("awal16").value);
+    let jumlah = Number(document.getElementById("jumlah16").value);
+
+    let hasil = [];
+
+    for (let i = 0; i < jumlah; i++) {
+
+        hasil.push(n);
+
+        if (i % 2 === 0) {
+            n += 4;
+        } else {
+            n -= 2;
+        }
+    }
+
+    tampilkan("hasil16", hasil.join(" "));
+}
+
+
+/* =========================================================
+   SOAL 17
+========================================================= */
+
+function soal17() {
+
+    let n = Number(document.getElementById("awal17").value);
+    let jumlah = Number(document.getElementById("jumlah17").value);
+
+    let hasil = [];
+
+    for (let i = 0; i < jumlah; i++) {
+
+        hasil.push(n);
+
+        if (i % 2 === 0) {
+            n += 10;
+        } else {
+            n -= 5;
+        }
+    }
+
+    tampilkan("hasil17", hasil.join(" "));
+}
+
+
+/* =========================================================
+   SOAL 18
+========================================================= */
+
+function soal18() {
+
+    let n = Number(document.getElementById("awal18").value);
+    let jumlah = Number(document.getElementById("jumlah18").value);
+
+    let hasil = [];
+
+    for (let i = 0; i < jumlah; i++) {
+
+        hasil.push(n);
+
+        if (i % 2 === 0) {
+            n -= 3;
+        } else {
+            n += 5;
+        }
+    }
+
+    tampilkan("hasil18", hasil.join(" "));
+}
+
+
+/* =========================================================
+   SOAL 19
+========================================================= */
+
+function soal19() {
+
+    let n = Number(document.getElementById("awal19").value);
+    let jumlah = Number(document.getElementById("jumlah19").value);
+
+    let hasil = [];
+
+    for (let i = 0; i < jumlah; i++) {
+
+        hasil.push(n);
+
+        if (i % 2 === 0) {
+            n *= 3;
+        } else {
+            n -= 5;
+        }
+    }
+
+    tampilkan("hasil19", hasil.join(" "));
+}
+
+
+/* =========================================================
+   SOAL 20
+========================================================= */
+
+function soal20() {
+
+    let n = Number(document.getElementById("awal20").value);
+    let jumlah = Number(document.getElementById("jumlah20").value);
+
+    let hasil = [];
+    let tambah = 1;
+
+    for (let i = 0; i < jumlah; i++) {
+
+        hasil.push(n);
+
+        n += tambah;
+        tambah++;
+    }
+
+    tampilkan("hasil20", hasil.join(" "));
+}
+
+
+/* =========================================================
+   SOAL 21
+========================================================= */
+
+function soal21() {
+
+    let jumlah = Number(document.getElementById("jumlah21").value);
+
+    let hasil = [];
+    let n = 1;
+
+    for (let i = 0; i < jumlah; i++) {
+
+        hasil.push(n);
+
+        n *= 2;
+    }
+
+    tampilkan("hasil21", hasil.join(" "));
+}
+
+
+/* =========================================================
+   SOAL 22
+========================================================= */
+
+function soal22() {
+
+    let n = Number(document.getElementById("n22").value);
+
+    let hasil = 1;
+    let proses = "";
+
+    for (let i = n; i >= 1; i--) {
+
+        hasil *= i;
+
+        proses += i;
+
+        if (i > 1) {
+            proses += " x ";
+        }
+    }
+
+    tampilkan(
+        "hasil22",
+        n + "! = " + proses + " = " + hasil
+    );
+}
+
+
+/* =========================================================
+   SOAL 23
+========================================================= */
+
+function soal23() {
+
+    let maksimum = Number(
+        document.getElementById("maks23").value
+    );
+
+    let a = 0;
+    let b = 1;
+
+    let hasil = [];
+
+    while (a <= maksimum) {
+
+        hasil.push(a);
+
+        let c = a + b;
+
+        a = b;
+        b = c;
+    }
+
+    tampilkan("hasil23", hasil.join(", "));
+}
+
+
+/* =========================================================
+   SOAL 24 - 28
+========================================================= */
+
+function tahunKabisat(no, angkaAkhir) {
+
+    let awal = Number(
+        document.getElementById("awal" + no).value
+    );
+
+    let akhir = Number(
+        document.getElementById("akhir" + no).value
+    );
+
+    let hasil = [];
+
+    for (let tahun = awal; tahun <= akhir; tahun++) {
+
+        let kabisat =
+            (tahun % 400 === 0) ||
+            (tahun % 4 === 0 && tahun % 100 !== 0);
+
+        let angkaTerakhir = tahun % 10;
+
+        if (kabisat && angkaTerakhir === angkaAkhir) {
+            hasil.push(tahun);
+        }
+    }
+
+    tampilkan(
+        "hasil" + no,
+        hasil.length > 0
+            ? hasil.join(", ")
+            : "Tidak ada tahun yang memenuhi."
+    );
+}
+
+
+/* =========================================================
+   SOAL 29 - 33
+========================================================= */
+
+function habisDibagi(no, pembagi) {
+
+    let awal = Number(
+        document.getElementById("awal" + no).value
+    );
+
+    let akhir = Number(
+        document.getElementById("akhir" + no).value
+    );
+
+    let hasil = [];
+
+    for (let i = awal; i <= akhir; i++) {
+
+        if (i % pembagi === 0) {
+            hasil.push(i);
+        }
+    }
+
+    tampilkan(
+        "hasil" + no,
+        hasil.join(", ")
+    );
+}
+
+
+/* =========================================================
+   SOAL 42
+========================================================= */
+
+function soal42() {
+
+    let data = document.getElementById("angka42").value
+        .trim()
+        .split(/\s+/)
+        .map(Number);
+
+    let terbesar = data[0];
+
+    for (let i = 1; i < data.length; i++) {
+
+        if (data[i] > terbesar) {
+            terbesar = data[i];
+        }
+    }
+
+    tampilkan(
+        "hasil42",
+        "Bilangan terbesar = " + terbesar
+    );
+}
+
+
+/* =========================================================
+   SOAL 43
+========================================================= */
+
+function soal43() {
+
+    let data = document.getElementById("angka43").value
+        .trim()
+        .split(/\s+/)
+        .map(Number);
+
+    let terkecil = data[0];
+
+    for (let i = 1; i < data.length; i++) {
+
+        if (data[i] < terkecil) {
+            terkecil = data[i];
+        }
+    }
+
+    tampilkan(
+        "hasil43",
+        "Bilangan terkecil = " + terkecil
+    );
+}
+
+
+/* =========================================================
+   SOAL 44
+========================================================= */
+
+function soal44() {
+
+    let data = document.getElementById("angka44").value
+        .trim()
+        .split(/\s+/)
+        .map(Number);
+
+    let jumlah = 0;
+
+    for (let i = 0; i < data.length; i++) {
+
+        if (data[i] % 2 === 0) {
+            jumlah++;
+        }
+    }
+
+    tampilkan(
+        "hasil44",
+        "Jumlah bilangan genap = " + jumlah
+    );
+}
+
+
+/* =========================================================
+   SOAL 45
+========================================================= */
+
+function soal45() {
+
+    let data = document.getElementById("angka45").value
+        .trim()
+        .split(/\s+/)
+        .map(Number);
+
+    let jumlah = 0;
+
+    for (let i = 0; i < data.length; i++) {
+
+        if (data[i] % 2 !== 0) {
+            jumlah++;
+        }
+    }
+
+    tampilkan(
+        "hasil45",
+        "Jumlah bilangan ganjil = " + jumlah
+    );
+}
+
+
+/* =========================================================
+   SOAL 46
+========================================================= */
+
+function soal46() {
+
+    let awal = Number(document.getElementById("awal46").value);
+    let akhir = Number(document.getElementById("akhir46").value);
+
+    let total = 0;
+
+    for (let i = awal; i <= akhir; i++) {
+
+        if (i > 0) {
+            total += i;
+        }
+    }
+
+    tampilkan(
+        "hasil46",
+        "Total = " + total
+    );
+}
+
+
+/* =========================================================
+   SOAL 47
+========================================================= */
+
+function soal47() {
+
+    let awal = Number(document.getElementById("awal47").value);
+    let akhir = Number(document.getElementById("akhir47").value);
+
+    let total = 0;
+
+    for (let i = awal; i <= akhir; i++) {
+
+        if (i % 2 === 0) {
+            total += i;
+        }
+    }
+
+    tampilkan(
+        "hasil47",
+        "Total bilangan genap = " + total
+    );
+}
+
+
+/* =========================================================
+   SOAL 48
+========================================================= */
+
+function soal48() {
+
+    let awal = Number(document.getElementById("awal48").value);
+    let akhir = Number(document.getElementById("akhir48").value);
+
+    let total = 0;
+
+    for (let i = awal; i <= akhir; i++) {
+
+        if (i % 2 !== 0) {
+            total += i;
+        }
+    }
+
+    tampilkan(
+        "hasil48",
+        "Total bilangan ganjil = " + total
+    );
+}
+
+
+/* =========================================================
+   FUNGSI CEK PRIMA
+========================================================= */
+
+function cekPrima(n) {
+
+    if (n < 2) {
+        return false;
+    }
+
+    for (let i = 2; i <= Math.sqrt(n); i++) {
+
+        if (n % i === 0) {
+            return false;
+        }
+    }
+
+    return true;
+}
+
+
+/* =========================================================
+   SOAL 49
+========================================================= */
+
+function soal49() {
+
+    let awal = Number(document.getElementById("awal49").value);
+    let akhir = Number(document.getElementById("akhir49").value);
+
+    let hasil = [];
+
+    for (let i = awal; i <= akhir; i++) {
+
+        if (cekPrima(i)) {
+            hasil.push(i);
+        }
+    }
+
+    tampilkan(
+        "hasil49",
+        hasil.join(", ")
+    );
+}
+
+
+/* =========================================================
+   SOAL 50
+========================================================= */
+
+function soal50() {
+
+    let awal = Number(document.getElementById("awal50").value);
+    let akhir = Number(document.getElementById("akhir50").value);
+
+    let jumlah = 0;
+    let daftar = [];
+
+    for (let i = awal; i <= akhir; i++) {
+
+        if (cekPrima(i)) {
+
+            jumlah++;
+            daftar.push(i);
+        }
+    }
+
+    tampilkan(
+        "hasil50",
+        "Bilangan prima: " +
+        daftar.join(", ") +
+        "\n\nJumlah bilangan prima = " +
+        jumlah
+    );
+}
+
+</script>
+
+</body>
+</html>
+```
